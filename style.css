@@ -1,0 +1,494 @@
+@font-face {
+    font-family: 'Segoe WP';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe WP'), url('./assets/SegoeWP.woff') format('woff');
+}
+@font-face {
+    font-family: 'Segoe WP lite';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe WP'), url('./assets/segoe-wp-light.ttf') format('woff');
+}
+@font-face {
+    font-family: 'Asap Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Asap Regular'), url('./assets/Asap-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'PTSans Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('PTSans Regular'), url('./assets/PTS55F.ttf') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 1120px;
+    margin: 0 auto;
+}
+header {
+    background-image: url(./assets/header-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo {
+    height: 120px;
+    padding-top: 40px;
+}
+.logo img {
+    display: inline-block;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+h1 {
+    display: inline-block;
+    text-transform: uppercase;
+    vertical-align: middle;
+    font-family: 'Lucida Sans';
+    font-style: italic;
+    color: #ffffff;
+    font-size: 2.8rem;
+}
+h2 {
+    text-transform: uppercase;
+    margin: 110px 0px;
+    text-align: center;
+    color: #ffcc00;
+    font-size: 4rem;
+    font-family: 'Asap Regular';
+}
+h2 span {
+    display: block;
+    color: #ffffff;
+}
+nav {
+    display: inline-block;
+    float: right;
+    text-transform: uppercase;
+    margin-top: 40px;    
+    padding: 8px 18px;
+    font-size: 1.2rem;
+    font-family: 'Segoe WP';
+    background-color: #ffcc00;    
+}
+
+nav ul {
+  list-style: none; 
+  margin: 0;
+  padding-left: 0; 
+}
+
+nav li {
+    display: inline;
+    border-right: 1px solid #cc9900;
+    margin-left: 27px;    
+}
+i {    
+    margin-right: 10px;
+}
+nav li a {
+    color: #cc9900;
+}
+.row {
+    height: 380px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    height: auto;
+}
+.row video {
+    padding: 30px;
+    width: 610px; 
+    height: 365px;
+    padding-bottom: 70px;
+}
+.list-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    align-items: baseline;
+    padding: 36px;
+    padding-top: 55px;
+    border-right: 1px solid #cc9900;    
+}
+figure {
+    border-right: 1px solid #cc9900;
+    border-left: 1px solid #cc9900;
+}
+figure,
+figcaption {
+    font-family: 'Segoe WP lite';
+    font-size: 1.9rem;
+    text-transform: uppercase;    
+}
+.content-items-container {
+    background-image: url(./assets/content-bg.png);
+    padding-bottom: 1px;
+}
+.container > h3 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-family: 'PTSans Regular';
+    text-transform: uppercase;
+    padding-top: 33px;
+    padding-bottom: 36px;
+}
+.content-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 366px;
+}
+.description {
+    background-color: #ff9900;
+    color: #ffffff;
+    font-size: 1.8rem;
+    padding: 30px;
+    padding-top: 19px;
+    font-family: 'Segoe WP lite';
+}
+.content-logo {
+    background-color: #ff9900;
+    background-image: url(./assets/twitter.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.video > video {
+    width: 345px;
+    height: 100%;
+}
+.content-date {
+    display: grid;
+    grid-template-columns: 125px 10fr;
+}
+.date {
+    background-color: #cc9900;
+    text-align: center;
+    text-transform: uppercase; 
+}
+.date > strong {
+    color: #ffffff;
+    font-size: 3rem;
+    display: block;
+    font-family: 'Segoe WP';
+    font-weight: bold;    
+}
+.date > small {
+    font-family: 'Segoe WP lite';
+    font-size: 1.5rem;
+    color: #996633;
+}
+.hiden-text {
+    opacity: -5.5;
+}
+.scrollbar {   
+    margin: 22px auto;
+    width: 86%;
+    overflow-x: scroll;
+}
+#style-1::-webkit-scrollbar-track {	
+	border-radius: 10px;
+    background-color: #fbf7ee63;
+    opacity: 0.5; 
+}
+#style-1::-webkit-scrollbar {
+	width: 12px;	
+}
+#style-1::-webkit-scrollbar-thumb {
+	border-radius: 10px;	
+	background-color: #ff9900;
+}
+.offers-content {
+    background-image: url(./assets/offers-bg.png);
+}
+.offers-content-items {
+    display: grid;
+    grid-template-columns: 366px 212px 45px 500px;
+}
+.desktop-item {
+    background-image: url(./assets/desktop-item.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 350px;
+
+}
+.tablet-item {
+    background-image: url(./assets/tablet-item.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.mobile-item {
+    background-image: url(./assets/mobile-item.png);
+    background-position: 0px 200px;
+    background-repeat: no-repeat;
+}
+.offers-content h3 {
+    text-align: center;
+    color: #ffcc00;
+    font-size: 3rem;
+}
+.offers-list-item {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-family: 'Segoe WP lite';
+    padding-left: 105px;
+    padding-top: 65px;
+}
+.offers-list-item ul {
+    list-style-image: url(./assets/list-img.png);
+}
+.offers-list-item li {
+    margin-bottom: 20px;
+    padding-left: 12px;
+}
+.tweets {
+    display: none;
+}
+.clear-fix {
+    padding-bottom: 63px;
+}
+main {
+    box-shadow: 0 0 -10px rgba(0,0,0,0.5);
+}
+footer {
+    background-color: #4e4e4e;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+footer a {
+    display: grid;
+    grid-template-columns: 1fr 16fr;
+}
+footer img {
+    width: 57px;
+    padding-top: 10px;
+}
+h5 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+    font-family: 'Lucida Sans';
+    font-style: italic;
+    color: #ffffff;
+    font-size: 2rem;
+    padding-top: 18px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 479px) {
+    .container {
+        width: 100%;
+    }
+    .logo {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        height: auto;
+        padding-top: 0; 
+    }
+    .logo img {
+        width: 19px;
+    }
+    h1 {
+        font-size: 9px;
+    }
+    nav {
+        display: inline-block;
+        text-transform: uppercase;
+        margin-top: 0px;
+               
+        padding: 10px 0 10px 10px;
+        font-size: 9px;
+        font-family: 'Segoe WP';
+        background-color: #ffcc00;
+        
+    }
+    nav li {
+        display: inline;
+        margin-left: 0px;
+        border-right: none; 
+    
+    }    
+    .row {
+        display: block;
+    }
+    .row video {
+        padding: 0;
+        width: 100%;
+        height: 164px;
+        object-fit: cover;
+    }
+    h2 {
+        display: none;
+    }
+    .list-item {
+        width: 100%;
+        padding: 0;
+        border-right: 0px solid #cc9900;
+    }
+    figure {
+        
+        margin: 10px 0;
+    }
+    figure, 
+    figcaption {
+        font-family: 'Segoe WP lite';
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+    h3 {
+        display: none;
+    }
+    figure img {
+        max-width: 45px;
+        max-height: 35px;
+    }
+    .content-items-container {
+        background-image: none;
+        padding-bottom: 1px;
+    }
+    .content-items {
+        display: grid;
+        grid-template-rows: 1fr 114px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .description {
+        background-color: #ff9900;
+        font-size: 12px;
+        padding: 10px 19px 11px 17px;
+        margin: 5px;
+        max-height: 97px;
+    }
+    .video {
+        margin: 5px;
+    }
+    .video > video {
+        width: 157px;
+        height: 116px;
+    }
+    .content-logo {
+        background-color: #F5C507;       
+        background-image: url(./assets/twitter.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 50%;
+    }
+    .tweets {        
+        background-color: #F5C507;
+        display: block; 
+    }
+    .tweets ul {
+        list-style: none; 
+    }
+    .tweets li {
+        background-image: url(./assets/tweets-message-bg.png);
+        opacity: 0.7;
+        background-position: 10px 4px;
+        background-repeat: no-repeat;
+        background-size: 80%;
+        padding: 7px 30px 4px 21px;
+        font-size: 7px;
+        margin-bottom: 2px;
+    }
+    .tweets li:first-child {
+        opacity: 1;
+    }
+    .tweets li:first-child {        
+        margin-top: 5px;
+    }
+    form {
+        border: 0px solid #333333;
+        border-radius: 5px;
+        width: 135px;
+        height: 15px;
+        display: grid;
+        grid-template-columns: 5fr 1fr;
+        overflow: hidden;
+        margin-left: 16px;
+    }
+
+    input[type="text"] {
+        border: none;
+        font-size: 7px;
+        height: 100%;
+    }      
+    input[type="submit"] {
+        display: inline-block;
+        width: 35px;
+        border: none;
+        line-height: 7px;
+        color: #fff;
+        background: #D3910F;
+        font-size: 7px;
+        top: 30px;
+        left: 350px;
+        cursor: pointer;
+      }
+    .date {
+        display: none;
+    }
+    .scrollbar {
+        display: none;
+    }
+    .offers-content {
+        height: 230px;
+    }
+    .offers-content h3 {
+        display: block;
+        font-size: 20px;
+        padding-top: 15px;
+        padding-bottom: 0px;
+    }
+    .offers-content-items {
+        display: grid;
+        grid-template-columns: 182px 84px 40px;
+    }    
+    .desktop-item {
+        background-size: 83%;
+        background-position: 29px 37px;
+        min-height: 180px;
+    }
+    .tablet-item {
+        background-size: 80%;
+        background-position: 17px 54px;
+    }
+    .mobile-item {
+        background-size: 50%;
+        background-position: 13px 112px;
+    }
+    .offers-list-item {
+        display: none;
+    }
+    .clear-fix {
+        display: none;
+    }
+    
+    footer {
+        height: 32px;
+    }
+    footer a {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+    }
+    footer img {
+        width: 17px;
+        padding-left: 32px;
+        padding-top: 4px;
+    }
+    h5 {
+        text-transform: uppercase;
+        vertical-align: middle;
+        font-family: 'Lucida Sans';
+        font-style: italic;
+        color: #ffffff;
+        font-size: 8px;
+        padding-top: 8px;
+        padding-bottom: 0;
+    }
+}
+
+
