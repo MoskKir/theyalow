@@ -280,6 +280,24 @@ h5 {
     padding-bottom: 20px;
 }
 
+.free-label {
+    background-color: #F5C507;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    position: relative;
+    top: -33px;
+    right: 4px;
+    font-family: 'Lucida Sans';
+}
+.free-label p {
+    position: relative;
+    top: 60px;
+    right: -8px;
+}
+
 @media screen and (max-width: 479px) {
     .container {
         width: 100%;
@@ -488,6 +506,24 @@ h5 {
         font-size: 8px;
         padding-top: 8px;
         padding-bottom: 0;
+    }
+    .free-label {
+        background-color: #F5C507;
+        color: #ffffff;
+        text-transform: uppercase;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        position: relative;
+        top: 9px;
+        right: -11px;
+        font-family: 'Lucida Sans';
+    }
+    .free-label p {
+        position: relative;
+        top: 31px;
+        right: -2px;
+        font-size: 9px;
     }
 }
 
