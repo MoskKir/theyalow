@@ -40,6 +40,30 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.pagin-buttons {
+    color: #ffffff;
+    font-size: 2rem;
+}
+.left-button {
+    background-color: #D3910F;
+    display: inline-block;
+    position: absolute;
+    top: 45%;
+    padding: 10px;
+    cursor: pointer;
+}
+.pagin-buttons i {
+    margin: 0;
+}
+.right-button {
+    background-color: #D3910F;
+    display: inline-block;
+    position: absolute;
+    top: 45%;
+    padding: 10px;
+    right: 0;
+    cursor: pointer;
+}
 .logo {
     height: 120px;
     padding-top: 40px;
@@ -116,12 +140,10 @@ nav li a {
     text-align: center;
     align-items: baseline;
     padding: 36px;
-    padding-top: 55px;
-    border-right: 1px solid #cc9900;    
+    padding-top: 55px;   
 }
 figure {
-    border-right: 1px solid #cc9900;
-    border-left: 1px solid #cc9900;
+    
 }
 figure,
 figcaption {
@@ -524,6 +546,9 @@ h5 {
         top: 31px;
         right: -2px;
         font-size: 9px;
+    }
+    .pagin-buttons {
+        display: none;
     }
 }
 
